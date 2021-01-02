@@ -36,10 +36,32 @@ def display_tweet(g, id, indent=0):
     user = g['users'][user_id]
     c = tweet['created_at'].split()
     date = f'{c[-1]} {c[1]} {c[2]}  {c[3]}'
-    text = html.unescape(tweet['full_text'])
+
+    text = tweet['full_text']
+
+    entities = tweet.get('entities')
+    if entities:
+        media = entities.get('media', ())
+        for item in media:
+            display_url = item.get('display_url')
+            if not display_url:
+                continue
+            i, j = item['indices']
+            text = text[:i] + display_url + text[j:]
+
+        urls = entities.get('urls', ())
+        for item in urls:
+            expanded_url = item.get('expanded_url')
+            if not expanded_url:
+                continue
+            i, j = item['indices']
+            text = text[:i] + expanded_url + text[j:]
+
+    text = html.unescape(text)
     lines = text.split('\n')
     width = 78 - indent
-    lines = [textwrap.fill(line, width) for line in lines]
+    lines = [textwrap.fill(line, width, break_long_words=False)
+             for line in lines]
     filled_text = '\n'.join(lines)
     url = f'https://twitter.com/{user["screen_name"]}/status/{id}'
 

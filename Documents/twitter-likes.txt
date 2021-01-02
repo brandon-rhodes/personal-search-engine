@@ -10,7 +10,7 @@ The tweet that changed everything. One VERY long year ago...
 
     Hopefully this is nothing out of the ordinary. But a @ProMED_mail posting
     about "unexplained pneumonias" in China is giving me #SARS flashbacks.
-    https://t.co/kvGcTxrHS4
+    https://promedmail.org/promed-post/?id=6864153
 
     ← 34  ⟳ 346  ♥ 1240
 
@@ -23,7 +23,7 @@ aesthetics.
 
 See for example:
 
-https://t.co/lBAcf9CZQk
+https://github.com/PyCQA/pycodestyle/issues/466
 
 ← 6  ⟳ 9  ♥ 65
 
@@ -36,7 +36,7 @@ was wrong.
 This was inevitable because the concepts, as defined by Brooks, are, if not
 meaningless, pretty much impossible to reasonably use in practice.
 
-https://t.co/rjXc7u4izE https://t.co/uOfGFvtTvw
+https://danluu.com/essential-complexity/ pic.twitter.com/uOfGFvtTvw
 
 ← 23  ⟳ 58  ♥ 287
 
@@ -44,9 +44,9 @@ Bob Wachter  @Bob_Wachter  2020 Dec 30  03:54:06
 https://twitter.com/Bob_Wachter/status/1344129609801953280
 
 17/ Contrast this w/ Israel, w/ 8.8M people, which has vaccinated ~500K, ~1 in
-18 of its citizens https://t.co/fCqL2pPhLR How’d they do it? A well executed
-nat'l plan. Whereas U.S., as usual, has underfunded the effort & left heavy
-lifting to under-resourced state health depts.
+18 of its citizens https://tinyurl.com/ybkez9gx How’d they do it? A well
+executed nat'l plan. Whereas U.S., as usual, has underfunded the effort & left
+heavy lifting to under-resourced state health depts.
 
 ← 10  ⟳ 74  ♥ 311
 
@@ -64,7 +64,7 @@ Prof B Buchanan OBE  @billatnapier  2020 Dec 26  20:49:41
 https://twitter.com/billatnapier/status/1342935639663259648
 
 Just in case you forget what Netscape Communicator 4.0 looked like ...
-https://t.co/573xNdN3ZH
+pic.twitter.com/573xNdN3ZH
 
 ← 68  ⟳ 224  ♥ 928
 
@@ -105,7 +105,7 @@ photojournalism
     Huge fan here. But when you post pic of a guy grimacing while getting his
     vaccine (when shot actually feels like a pin prick), at least consider
     fact that 1000s may see this as reason to not get vaccinated. Some will
-    die from that decision. Thanks. https://t.co/ffIkzGovn0
+    die from that decision. Thanks. pic.twitter.com/ffIkzGovn0
 
     ← 394  ⟳ 1150  ♥ 15689
 
@@ -118,7 +118,7 @@ works.
 Points:
 -precipitation *almost* always starts as ice (even in summer) ❄️
 -freezing rain and sleet are a result of water that melted and REFROZE in the
-air/on the ground. so cool. 🌨️ https://t.co/CkLYuITGTu
+air/on the ground. so cool. 🌨️ pic.twitter.com/CkLYuITGTu
 
 ← 1  ⟳ 1  ♥ 8
 
@@ -129,7 +129,7 @@ https://twitter.com/tomaspueyo/status/1342987015818764288
 
 The new variant appeared, as predicted, in a place with high incidence—the UK.
 
-https://t.co/TN8K7kr6ov https://t.co/kZ5ovq0Lbr
+https://link.medium.com/x4UqZ3oLxcb pic.twitter.com/kZ5ovq0Lbr
 
 ← 8  ⟳ 130  ♥ 583
 
@@ -169,7 +169,7 @@ Okay, looks like we're sorted
 Rebekah Jones  @GeoRebekah  2020 Dec 24  19:48:04
 https://twitter.com/GeoRebekah/status/1342195355920818180
 
-Thank you. https://t.co/BP3MATwDEn
+Thank you. https://floridacovidaction.com/2020/12/24/thank-you/
 
 ← 26  ⟳ 69  ♥ 451
 
@@ -177,7 +177,7 @@ The Hill  @thehill  2020 Dec 24  15:48:57
 https://twitter.com/thehill/status/1342135180522303490
 
 SURPRISE! Dr. Fauci is serenaded as he leaves work on his 80th birthday.
-https://t.co/d5a6xYxfrA
+pic.twitter.com/d5a6xYxfrA
 
 ← 500  ⟳ 2979  ♥ 17622
 
@@ -216,8 +216,9 @@ The pursuit of complete eradication is key.
     HUMAN➡️MINKS➡️HUMAN transmission on mink farms in NL. 68% of the tested
     farm workers and/or contacts had evidence of #SARSCoV2 infection. The
     coronavirus mutated & even evolved within minks before transmitted back to
-    humans—& keeps #COVID19 perpetuating. https://t.co/5ARZ6Pq5mO
-    https://t.co/fhrQC9ZVDo
+    humans—& keeps #COVID19 perpetuating.
+    https://science.sciencemag.org/content/early/2020/11/09/science.abe5901.full
+    pic.twitter.com/fhrQC9ZVDo
 
     ← 114  ⟳ 896  ♥ 1843
 
@@ -246,7 +247,7 @@ Bob Wachter  @Bob_Wachter  2020 Dec 19  04:23:55
 https://twitter.com/Bob_Wachter/status/1340150846693072896
 
 25/ I hope you’ll watch this great discussion, again here:
-https://t.co/3PZVFCD3f2
+https://tinyurl.com/y75bq29s
 
 This was last Grand Rds of 2020. Thanks to fab production team & extraordinary
 speakers, who have taught me (& ~1.5M viewers) so much about this infinitely

@@ -5,6 +5,7 @@ import html
 import json
 import sys
 import textwrap
+from pprint import pprint
 
 def main(argv):
     parser = argparse.ArgumentParser(description='Format tweets for search')
@@ -12,9 +13,12 @@ def main(argv):
                         help='paths to the Cache/ entries to process')
     args = parser.parse_args(argv)
 
-    with open(args.cache_paths[0]) as f:
-        j = json.load(f)
+    for cache_path in args.cache_paths:
+        with open(cache_path) as f:
+            j = json.load(f)
+        output_tweets(j)
 
+def output_tweets(j):
     url, headers, content = j
     j2 = json.loads(content)
 
@@ -79,7 +83,10 @@ def display_tweet(g, id, indent=0):
     card = tweet.get('card')
     if card is not None:
         bv = card['binding_values']
-        text = bv["title"]["string_value"]
+        if 'title' not in bv:
+            title = 'MISSING TITLE'
+        else:
+            text = bv["title"]["string_value"]
         description = bv.get("description")
         if description:
             text += '\n\n'
@@ -116,8 +123,9 @@ def display_tweet(g, id, indent=0):
     yield textwrap.indent(text, ' ' * indent)
 
     if tweet.get('is_quote_status'):
-        quoted_id = tweet['quoted_status_id_str']
-        if quoted_id in g['tweets']:
+        quoted_id = tweet.get('quoted_status_id_str')
+        # TODO: examine when quoted id is missing
+        if quoted_id and quoted_id in g['tweets']:
             yield from display_tweet(g, quoted_id, indent + 4)
 
     #print(tweet.keys())

@@ -12,6 +12,9 @@ The tweet that changed everything. One VERY long year ago...
     about "unexplained pneumonias" in China is giving me #SARS flashbacks.
     https://promedmail.org/promed-post/?id=6864153
 
+    > Promed Post - ProMED-mail
+    > https://promedmail.org/promed-post/?id=6864153
+
     ← 34  ⟳ 346  ♥ 1240
 
 Raymond Hettinger  @raymondh  2020 Dec 31  21:45:15
@@ -25,6 +28,12 @@ See for example:
 
 https://github.com/PyCQA/pycodestyle/issues/466
 
+> Please rename this tool · Issue #466 · PyCQA/pycodestyle
+> Tools should not be named after style guide PEPs. A style guide is a document
+> written for humans, and has lots of subtlety. Issues caused by the rigidity or
+> simplicity of the tool end up causing po...
+> https://github.com/PyCQA/pycodestyle/issues/466
+
 ← 6  ⟳ 9  ♥ 65
 
 Dan Luu  @danluu  2020 Dec 29  12:34:21
@@ -36,7 +45,8 @@ was wrong.
 This was inevitable because the concepts, as defined by Brooks, are, if not
 meaningless, pretty much impossible to reasonably use in practice.
 
-https://danluu.com/essential-complexity/ pic.twitter.com/uOfGFvtTvw
+https://danluu.com/essential-complexity/
+https://twitter.com/danluu/status/1343898148863762435/photo/1
 
 ← 23  ⟳ 58  ♥ 287
 
@@ -47,6 +57,11 @@ https://twitter.com/Bob_Wachter/status/1344129609801953280
 18 of its citizens https://tinyurl.com/ybkez9gx How’d they do it? A well
 executed nat'l plan. Whereas U.S., as usual, has underfunded the effort & left
 heavy lifting to under-resourced state health depts.
+
+> More Israelis vaccinated against COVID than sick since start of pandemic
+> The milestone comes amid reports by Israeli media that the supply of vaccines
+> has been somewhat cut to HMOs throughout the country.
+> https://tinyurl.com/ybkez9gx
 
 ← 10  ⟳ 74  ♥ 311
 
@@ -64,7 +79,7 @@ Prof B Buchanan OBE  @billatnapier  2020 Dec 26  20:49:41
 https://twitter.com/billatnapier/status/1342935639663259648
 
 Just in case you forget what Netscape Communicator 4.0 looked like ...
-pic.twitter.com/573xNdN3ZH
+https://twitter.com/billatnapier/status/1342935639663259648/photo/1
 
 ← 68  ⟳ 224  ♥ 928
 
@@ -105,7 +120,8 @@ photojournalism
     Huge fan here. But when you post pic of a guy grimacing while getting his
     vaccine (when shot actually feels like a pin prick), at least consider
     fact that 1000s may see this as reason to not get vaccinated. Some will
-    die from that decision. Thanks. pic.twitter.com/ffIkzGovn0
+    die from that decision. Thanks.
+    https://twitter.com/Bob_Wachter/status/1341772822297804800/photo/1
 
     ← 394  ⟳ 1150  ♥ 15689
 
@@ -118,7 +134,8 @@ works.
 Points:
 -precipitation *almost* always starts as ice (even in summer) ❄️
 -freezing rain and sleet are a result of water that melted and REFROZE in the
-air/on the ground. so cool. 🌨️ pic.twitter.com/CkLYuITGTu
+air/on the ground. so cool. 🌨️
+https://twitter.com/ASKusmer/status/1343638550114430976/photo/1
 
 ← 1  ⟳ 1  ♥ 8
 
@@ -129,7 +146,8 @@ https://twitter.com/tomaspueyo/status/1342987015818764288
 
 The new variant appeared, as predicted, in a place with high incidence—the UK.
 
-https://link.medium.com/x4UqZ3oLxcb pic.twitter.com/kZ5ovq0Lbr
+https://link.medium.com/x4UqZ3oLxcb
+https://twitter.com/tomaspueyo/status/1342987015818764288/photo/1
 
 ← 8  ⟳ 130  ♥ 583
 
@@ -171,13 +189,19 @@ https://twitter.com/GeoRebekah/status/1342195355920818180
 
 Thank you. https://floridacovidaction.com/2020/12/24/thank-you/
 
+> Thank you.
+> I thought a lot about how to make this announcement. In true "Rebekah Jones
+> fashion," I'll just come out and say it: I will be leaving Florida next month.
+> After the raid on my home, I can no longer...
+> https://floridacovidaction.com/2020/12/24/thank-you/
+
 ← 26  ⟳ 69  ♥ 451
 
 The Hill  @thehill  2020 Dec 24  15:48:57
 https://twitter.com/thehill/status/1342135180522303490
 
 SURPRISE! Dr. Fauci is serenaded as he leaves work on his 80th birthday.
-pic.twitter.com/d5a6xYxfrA
+https://twitter.com/thehill/status/1342135180522303490/video/1
 
 ← 500  ⟳ 2979  ♥ 17622
 
@@ -218,7 +242,7 @@ The pursuit of complete eradication is key.
     coronavirus mutated & even evolved within minks before transmitted back to
     humans—& keeps #COVID19 perpetuating.
     https://science.sciencemag.org/content/early/2020/11/09/science.abe5901.full
-    pic.twitter.com/fhrQC9ZVDo
+    https://twitter.com/DrEricDing/status/1335419078446551041/photo/1
 
     ← 114  ⟳ 896  ♥ 1843
 
@@ -252,5 +276,11 @@ https://tinyurl.com/y75bq29s
 This was last Grand Rds of 2020. Thanks to fab production team & extraordinary
 speakers, who have taught me (& ~1.5M viewers) so much about this infinitely
 sad yet fascinating topic. Stay safe.
+
+> Covid-19: The CDC, the Vaccine Roll-Out, and Ethics and Policy Issues...
+> This past week, the Covid-19 surge reached unprecedented heights. Tragically,
+> we hit 300,000 deaths in the U.S. President-elect Joe Biden announced his
+> choic...
+> https://tinyurl.com/y75bq29s
 
 ← 8  ⟳ 1  ♥ 105

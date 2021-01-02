@@ -39,21 +39,25 @@ def display_tweet(g, id, indent=0):
 
     text = tweet['full_text']
 
+    url_map = {}
+
     entities = tweet.get('entities')
     if entities:
         media = entities.get('media', ())
         for item in media:
-            display_url = item.get('display_url')
-            if not display_url:
+            expanded_url = item.get('expanded_url')
+            if not expanded_url:
                 continue
             i, j = item['indices']
-            text = text[:i] + display_url + text[j:]
+            text = text[:i] + expanded_url + text[j:]
 
         urls = entities.get('urls', ())
         for item in urls:
             expanded_url = item.get('expanded_url')
             if not expanded_url:
                 continue
+            url = item['url']
+            url_map[url] = expanded_url
             i, j = item['indices']
             text = text[:i] + expanded_url + text[j:]
 
@@ -62,6 +66,28 @@ def display_tweet(g, id, indent=0):
     width = 78 - indent
     lines = [textwrap.fill(line, width, break_long_words=False)
              for line in lines]
+
+    card = tweet.get('card')
+    if card is not None:
+        bv = card['binding_values']
+        text = bv["title"]["string_value"]
+        description = bv.get("description")
+        if description:
+            text += '\n\n'
+            text += description["string_value"]
+        more_lines = []
+        for line in text.splitlines():
+            more_lines.extend(textwrap.fill(line, width, break_long_words=False)
+                              .splitlines())
+        url = card['url']
+        url = url_map.get(url, url)
+        more_lines.append(url)
+        more_lines = ['> ' + line if line else '>' for line in more_lines]
+        lines.append('')
+        lines.extend(more_lines)
+        # print(lines)
+        # print(textwrap.fill(text, width, break_long_words=False))
+
     filled_text = '\n'.join(lines)
     url = f'https://twitter.com/{user["screen_name"]}/status/{id}'
 

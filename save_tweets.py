@@ -1,9 +1,18 @@
+#!/usr/bin/env python3
+
+import argparse
 import html
 import json
+import sys
 import textwrap
 
-def main():
-    with open('Cache/7b02ee57e98a14732cefac8930b3f1d4') as f:
+def main(argv):
+    parser = argparse.ArgumentParser(description='Format tweets for search')
+    parser.add_argument('cache_paths', nargs='+',
+                        help='paths to the Cache/ entries to process')
+    args = parser.parse_args(argv)
+
+    with open(args.cache_paths[0]) as f:
         j = json.load(f)
 
     url, headers, content = j
@@ -114,4 +123,5 @@ def display_tweet(g, id, indent=0):
     #print(tweet.keys())
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1:])
+

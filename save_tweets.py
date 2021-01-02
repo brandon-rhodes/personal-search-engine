@@ -6,6 +6,7 @@ import json
 import sys
 import textwrap
 from pprint import pprint
+from sys import stderr
 
 def main(argv):
     parser = argparse.ArgumentParser(description='Format tweets for search')
@@ -14,6 +15,7 @@ def main(argv):
     args = parser.parse_args(argv)
 
     for cache_path in args.cache_paths:
+        #print(cache_path, file=stderr)
         with open(cache_path) as f:
             j = json.load(f)
         output_tweets(j)
@@ -25,7 +27,12 @@ def output_tweets(j):
     g = j2['globalObjects']
     #tweets = g['tweets']
 
+    #print(json.dumps(j2, indent=2))
+    #print(json.dumps(j2['timeline']['instructions'], indent=2))
+
     for instruction in j2['timeline']['instructions']:
+        if 'addEntries' not in instruction:  # for example, "pinEntry"
+            continue
         add_entries = instruction['addEntries']['entries']
 
     tweet_ids = [e['entryId'] for e in add_entries]
@@ -44,7 +51,10 @@ def output_tweets(j):
         f.write('\n'.join(output))
 
 def display_tweet(g, id, indent=0):
-    tweet = g['tweets'][id]
+    tweet = g['tweets'].get(id)
+    if not tweet:
+        yield f'MISSING TWEET {id}'
+        return
     user_id = tweet['user_id_str']
     user = g['users'][user_id]
     c = tweet['created_at'].split()

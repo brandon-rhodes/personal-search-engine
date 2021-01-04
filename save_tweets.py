@@ -8,6 +8,8 @@ import textwrap
 from pprint import pprint
 from sys import stderr
 
+tw = textwrap.TextWrapper(break_long_words=False, break_on_hyphens=False)
+
 def main(argv):
     parser = argparse.ArgumentParser(description='Format tweets for search')
     parser.add_argument('cache_paths', nargs='+',
@@ -47,8 +49,7 @@ def output_tweets(j):
             print(text)
             output.append(text)
 
-    with open('Documents/twitter-likes.txt', 'w') as f:
-        f.write('\n'.join(output))
+    # TODO: why are we both saving output in `output` but also printing?
 
 def display_tweet(g, id, indent=0):
     tweet = g['tweets'].get(id)
@@ -64,6 +65,8 @@ def display_tweet(g, id, indent=0):
 
     url_map = {}
 
+    replacements = []  # (i,j,text)
+
     entities = tweet.get('entities')
     if entities:
         media = entities.get('media', ())
@@ -72,7 +75,7 @@ def display_tweet(g, id, indent=0):
             if not expanded_url:
                 continue
             i, j = item['indices']
-            text = text[:i] + expanded_url + text[j:]
+            replacements.append((i, j, expanded_url))
 
         urls = entities.get('urls', ())
         for item in urls:
@@ -82,13 +85,16 @@ def display_tweet(g, id, indent=0):
             url = item['url']
             url_map[url] = expanded_url
             i, j = item['indices']
-            text = text[:i] + expanded_url + text[j:]
+            replacements.append((i, j, expanded_url))
+
+    replacements.sort(reverse=True)
+    for i, j, replacement in replacements:
+        text = text[:i] + replacement + text[j:]
 
     text = html.unescape(text)
     lines = text.split('\n')
-    width = 78 - indent
-    lines = [textwrap.fill(line, width, break_long_words=False)
-             for line in lines]
+    tw.width = 78 - indent
+    lines = [tw.fill(line) for line in lines]
 
     card = tweet.get('card')
     if card is not None:
@@ -103,8 +109,7 @@ def display_tweet(g, id, indent=0):
             text += description["string_value"]
         more_lines = []
         for line in text.splitlines():
-            more_lines.extend(textwrap.fill(line, width, break_long_words=False)
-                              .splitlines())
+            more_lines.extend(tw.fill(line).splitlines())
         url = card['url']
         url = url_map.get(url, url)
         more_lines.append(url)
@@ -112,7 +117,7 @@ def display_tweet(g, id, indent=0):
         lines.append('')
         lines.extend(more_lines)
         # print(lines)
-        # print(textwrap.fill(text, width, break_long_words=False))
+        # print(tw.fill(text))
 
     filled_text = '\n'.join(lines)
     url = f'https://twitter.com/{user["screen_name"]}/status/{id}'
